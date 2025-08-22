@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    color: #18181b;
+    min-height: 100vh;
+    transition: background 0.5s, color 0.5s;
+  }
+  html.dark {
+    background: linear-gradient(135deg, #0a1120 0%, #1e293b 100%);
+    color: #f8fafc;
+  }
+  body {
+    min-height: 100vh;
+    font-feature-settings: "salt" on, "ss01" on, "ss02" on;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+/* Custom scrollbars for both modes */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #1e40af 0%, #6366f1 100%);
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #60a5fa 0%, #1e293b 100%);
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.7s cubic-bezier(0.4,0,0.2,1) both;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
