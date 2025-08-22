@@ -18,14 +18,14 @@ export const WeatherPage = () => {
     <section className="flex flex-col gap-8 items-center w-full" aria-label="weather page">
       <form onSubmit={onSubmit} className="flex flex-col sm:flex-row gap-4 items-stretch w-full max-w-xl" aria-label="location form">
         <label htmlFor="location" className="sr-only">Location</label>
-        <input id="location" name="location" placeholder="Enter a city e.g. Brisbane" value={input} onChange={(e) => setInput(e.target.value)} className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none shadow bg-white/90 dark:bg-blue-900 dark:border-blue-700 dark:text-blue-100" aria-required="true" />
-        <button type="submit" className="px-6 py-3 rounded-lg bg-blue-700 text-white font-medium shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-blue-600 dark:hover:bg-blue-500" aria-label="fetch weather">Get Weather</button>
+        <input id="location" name="location" placeholder="Enter a city e.g. Brisbane" value={input} onChange={(e) => setInput(e.target.value)} className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow bg-white/90 dark:bg-yellow-900 dark:border-yellow-700 dark:text-yellow-100" aria-required="true" />
+        <button type="submit" className="px-6 py-3 rounded-lg bg-yellow-700 text-white font-medium shadow hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 dark:bg-yellow-600 dark:hover:bg-yellow-500" aria-label="fetch weather">Get Weather</button>
       </form>
       <div className="w-full max-w-xl min-h-64 flex items-center justify-center">
         {submitted ? (
           <WeatherDisplay location={locationLabel || submitted} temperatureC={temperatureC || 0} weatherLabel={weatherLabel || 'Loading'} icon={icon || '⌛'} windSpeed={windSpeed} fetchedAt={fetchedAt} isLoading={loading} error={error} />
         ) : (
-          <p className="text-gray-500 dark:text-blue-300" aria-label="prompt">Enter a location to see the current weather.</p>
+          <p className="text-gray-500 dark:text-yellow-300" aria-label="prompt">Enter a location to see the current weather.</p>
         )}
       </div>
     </section>
