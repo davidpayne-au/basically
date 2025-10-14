@@ -14,7 +14,7 @@ export const WeatherDisplay = ({ location, temperatureC, weatherLabel, icon, win
   }
   if (error) return <p role="alert" className="text-red-600 font-medium">{error}</p>;
   return (
-    <motion.div className="p-6 rounded-2xl border border-gray-200 shadow bg-white/90 dark:bg-yellow-900/70 dark:border-yellow-700 text-center backdrop-blur-md" variants={variants} initial="hidden" animate="visible" aria-label="weather result">
+    <motion.div className="p-6 rounded-2xl border border-orange-200 shadow bg-gradient-to-br from-yellow-50 to-orange-100 dark:bg-gradient-to-br dark:from-cyan-700 dark:to-blue-600 dark:border-cyan-500 text-center backdrop-blur-md" variants={variants} initial="hidden" animate="visible" aria-label="weather result">
       <div className="flex flex-col items-center gap-2">
         <span role="img" aria-label={weatherLabel} className="text-6xl drop-shadow-sm select-none">{icon}</span>
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-yellow-100">{location}</h2>

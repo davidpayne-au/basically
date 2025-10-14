@@ -9,7 +9,7 @@ export const Hello = ({ name, greeting = 'Hello' }: HelloProps) => {
   return (
     <section
       aria-label="greeting"
-      className="p-8 rounded-2xl border border-gray-200 shadow transition-all text-center bg-white max-w-md mx-auto dark:bg-yellow-900 dark:border-yellow-700"
+      className="p-8 rounded-2xl border border-orange-200 shadow transition-all text-center bg-gradient-to-br from-yellow-50 to-orange-100 max-w-md mx-auto dark:bg-gradient-to-br dark:from-purple-800 dark:to-indigo-700 dark:border-purple-500"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

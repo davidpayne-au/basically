@@ -18,8 +18,8 @@ export const WeatherPage = () => {
     <section className="flex flex-col gap-8 items-center w-full" aria-label="weather page">
       <form onSubmit={onSubmit} className="flex flex-col sm:flex-row gap-4 items-stretch w-full max-w-xl" aria-label="location form">
         <label htmlFor="location" className="sr-only">Location</label>
-        <input id="location" name="location" placeholder="Enter a city e.g. Brisbane" value={input} onChange={(e) => setInput(e.target.value)} className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow bg-white/90 dark:bg-yellow-900 dark:border-yellow-700 dark:text-yellow-100" aria-required="true" />
-        <button type="submit" className="px-6 py-3 rounded-lg bg-yellow-700 text-white font-medium shadow hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 dark:bg-yellow-600 dark:hover:bg-yellow-500" aria-label="fetch weather">Get Weather</button>
+        <input id="location" name="location" placeholder="Enter a city e.g. Brisbane" value={input} onChange={(e) => setInput(e.target.value)} className="flex-1 px-4 py-3 rounded-lg border border-orange-300 focus:ring-2 focus:ring-orange-500 focus:outline-none shadow bg-white dark:bg-cyan-700 dark:border-cyan-500 dark:text-cyan-50" aria-required="true" />
+        <button type="submit" className="px-6 py-3 rounded-lg bg-orange-600 text-white font-medium shadow hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-400 dark:bg-purple-600 dark:hover:bg-purple-500" aria-label="fetch weather">Get Weather</button>
       </form>
       <div className="w-full max-w-xl min-h-64 flex items-center justify-center">
         {submitted ? (

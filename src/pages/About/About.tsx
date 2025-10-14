@@ -10,7 +10,7 @@ export const AboutPage = () => {
   const { version, loading, error } = useVersion();
   return (
     <motion.section
-      className="p-8 rounded-2xl border border-gray-200 shadow bg-white max-w-md mx-auto text-center animate-fade-in dark:bg-yellow-900 dark:border-yellow-700"
+      className="p-8 rounded-2xl border border-orange-200 shadow bg-gradient-to-br from-yellow-50 to-orange-100 max-w-md mx-auto text-center animate-fade-in dark:bg-gradient-to-br dark:from-purple-800 dark:to-indigo-700 dark:border-purple-500"
       initial="hidden"
       animate="visible"
       variants={aboutVariants}
